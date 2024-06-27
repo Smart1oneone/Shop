@@ -16,8 +16,12 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
+    #third party aps
+    'mathfilters',
+
     #apps
     'shop.apps.ShopConfig',
+    'cart.apps.CartConfig',
 
 
 ]
@@ -48,6 +52,7 @@ TEMPLATES = [
                 'django.contrib.messages.context_processors.messages',
                 #Custom context processors
                 'shop.context_processors.categories',
+                'cart.context_processors.cart',
             ],
         },
     },
