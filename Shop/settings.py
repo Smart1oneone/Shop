@@ -16,12 +16,17 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
-    #third party aps
+    #third party libraries
     'mathfilters',
+    'crispy_forms',
+    'django_email_verification',
 
     #apps
     'shop.apps.ShopConfig',
     'cart.apps.CartConfig',
+    'account.apps.AccountConfig',
+    'crispy_bootstrap5',
+
 
 
 ]
@@ -85,11 +90,8 @@ AUTH_PASSWORD_VALIDATORS = [
 
 
 LANGUAGE_CODE = 'en-EN'
-
 TIME_ZONE = 'Europe/Moscow'
-
 USE_I18N = True
-
 USE_TZ = True
 
 STATIC_URL = 'static/'
@@ -100,3 +102,7 @@ MEDIA_URL = '/media/'
 
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
+CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap5"
+CRISPY_TEMPLATE_PACK = "bootstrap5"
