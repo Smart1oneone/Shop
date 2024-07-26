@@ -1,7 +1,7 @@
 from django import forms
 from django.contrib.auth.forms import UserCreationForm, AuthenticationForm
 from django.contrib.auth import get_user_model
-from django.forms.widgets import TextInput
+from django.forms.widgets import TextInput, PasswordInput
 
 User = get_user_model()
 
@@ -23,3 +23,8 @@ class UserCreateForm(UserCreationForm):
         if User.objects.filter(email=email).exists() and len(email) > 254:
             raise forms.ValidationError('Email already registered or too long')
         return email
+
+class LoginForm(AuthenticationForm):
+    username = forms.CharField(widget=TextInput(attrs={'class': 'form-control'}))
+    password = forms.CharField(widget=PasswordInput(attrs={'class': 'form-control'}))
+

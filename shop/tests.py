@@ -5,6 +5,7 @@ from .models import *
 
 
 
+
 class ProductViewTest(TestCase):
     def test_get_product(self):
         small_gif = (
@@ -88,5 +89,73 @@ class CategoryDetailViewTest(TestCase):
         response = self.client.get(reverse('shop:category_list', kwargs={'slug': 'test-category'}))
         self.assertEqual(response.context['category'], self.category)
         self.assertEqual(response.context['products'].first(), self.product)
+
+
+
+
+class TestLoginUser:
+
+    # User is redirected to the shop page if already authenticated
+    def test_redirect_if_authenticated(self, mocker):
+        from django.test import RequestFactory
+        from django.contrib.auth.models import AnonymousUser
+        from django.shortcuts import redirect
+        from account.views import login_user
+
+        request = RequestFactory().get('/login')
+        request.user = mocker.Mock(is_authenticated=True)
+
+        response = login_user(request)
+        assert response.status_code == 302
+        assert response.url == 'shop:shop'
+
+    # User tries to login with an empty username or password
+    def test_login_with_empty_credentials(self, mocker):
+        from django.test import RequestFactory
+        from django.contrib.messages.storage.fallback import FallbackStorage
+        from account.views import login_user
+
+        request = RequestFactory().post('/login', data={'username': '', 'password': ''})
+        request.user = mocker.Mock(is_authenticated=False)
+        messages = FallbackStorage(request)
+        mocker.patch('django.contrib.messages.get_messages', return_value=messages)
+
+        response = login_user(request)
+        assert response.status_code == 302
+        assert response.url == 'account:login'
+
+    # User is authenticated and redirected to the dashboard upon successful login
+    def test_successful_login_redirect(self, mocker):
+        # Mocking necessary objects and methods
+        mock_request = mocker.MagicMock()
+        mock_user = mocker.MagicMock()
+        mock_authenticate = mocker.patch('django.contrib.auth.authenticate', return_value=mock_user)
+        mock_login = mocker.patch('django.contrib.auth.login')
+
+        # Simulating POST request with valid credentials
+        mock_request.method = 'POST'
+        mock_request.POST.get.side_effect = lambda x: 'username' if x == 'username' else 'password'
+
+        # Calling the function under test
+        login_user(mock_request)
+
+        # Assertions
+        mock_authenticate.assert_called_once_with(mock_request, username='username', password='password')
+        mock_login.assert_called_once_with(mock_request, mock_user)
+        mock_request.method = 'GET'
+        assert login_user(mock_request) == redirect('account:dashboard')
+
+    # Login form is rendered correctly when the request method is GET
+    def test_render_login_form_get(self, mocker):
+        # Mocking necessary objects and methods
+        mock_request = mocker.MagicMock()
+        mock_request.method = 'GET'
+
+        # Calling the function under test
+        response = login_user(mock_request)
+
+        # Assertions
+        assert response.status_code == 200
+        assert response.template_name == 'account/login/login.html'
 
 
