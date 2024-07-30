@@ -30,6 +30,7 @@ INSTALLED_APPS = [
     'cart.apps.CartConfig',
     'account.apps.AccountConfig',
     'crispy_bootstrap5',
+    'payment.apps.PaymentConfig',
 
 
 
@@ -154,3 +155,4 @@ EMAIL_PORT = 587
 EMAIL_HOST_USER = 'smart1oneone@gmail.com'
 EMAIL_HOST_PASSWORD = env('EMAIL_HOST_PASSWORD')  # os.environ['password_key'] suggested
 EMAIL_USE_TLS = True
+
