@@ -31,7 +31,7 @@ INSTALLED_APPS = [
     'account.apps.AccountConfig',
     'crispy_bootstrap5',
     'payment.apps.PaymentConfig',
-
+    'django_google_fonts'
 
 
 ]
@@ -156,3 +156,10 @@ EMAIL_HOST_USER = 'smart1oneone@gmail.com'
 EMAIL_HOST_PASSWORD = env('EMAIL_HOST_PASSWORD')  # os.environ['password_key'] suggested
 EMAIL_USE_TLS = True
 
+STRIPE_PUBLISHABLE_KEY = env('STRIPE_PUBLISHABLE_KEY')
+STRIPE_SECRET_KEY = env('STRIPE_SECRET_KEY')
+STRIPE_API_VERSION = '2023-10-16'
+
+
+GOOGLE_FONTS = ['Montserrat:wght@300,400', 'Roboto']
+GOOGLE_FONTS_DIR = BASE_DIR / 'static'
