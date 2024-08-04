@@ -14,7 +14,7 @@ class ProductViewTest(TestCase):
             b'\x02\x4c\x01\x00\x3b'
         )
 
-        uploaded = SimpleUploadedFile('test_image.gif', small_gif, content_type='image/gif')
+        uploaded = SimpleUploadedFile('default.jpg', small_gif, content_type='image/gif')
 
         category = Category.objects.create(name='django')
         product_1 = Product.objects.create(
@@ -46,7 +46,7 @@ class ProductDetailViewTest(TestCase):
             b'\x02\x4c\x01\x00\x3b'
         )
 
-        uploaded = SimpleUploadedFile('test_image.gif', small_gif, content_type='image/gif')
+        uploaded = SimpleUploadedFile('default.jpg', small_gif, content_type='image/gif')
         category = Category.objects.create(name='django1')
         product_1 = Product.objects.create(
             title='Test Product1',
@@ -68,7 +68,7 @@ class CategoryDetailViewTest(TestCase):
             b'\x01\x0a\x00\x01\x00\x2c\x00\x00\x00\x00\x01\x00\x01\x00\x00\x02'
             b'\x02\x4c\x01\x00\x3b'
         )
-        uploaded = SimpleUploadedFile('test_image.gif', small_gif, content_type='image/gif')
+        uploaded = SimpleUploadedFile('default.jpg', small_gif, content_type='image/gif')
         self.category = Category.objects.create(name='test django', slug='test-category')
 
         self.product = Product.objects.create(

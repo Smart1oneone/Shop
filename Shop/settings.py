@@ -1,6 +1,7 @@
 from pathlib import Path
 
 import environ
+from django.contrib import messages
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -35,6 +36,8 @@ INSTALLED_APPS = [
     'sorl.thumbnail',
     'django_celery_beat',
     'django_celery_results',
+    'django_htmx',
+    'recommend.apps.RecommendConfig',
 
 
 ]
@@ -47,6 +50,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'django_htmx.middleware.HtmxMiddleware',
 ]
 
 ROOT_URLCONF = 'Shop.urls'
@@ -108,6 +112,13 @@ STATICFILES_DIRS = [
 
 MEDIA_ROOT = BASE_DIR / 'media'
 MEDIA_URL = '/media/'
+MESSAGE_TAGS = {
+        messages.DEBUG: 'alert-secondary',
+        messages.INFO: 'alert-info',
+        messages.SUCCESS: 'alert-success',
+        messages.WARNING: 'alert-warning',
+        messages.ERROR: 'alert-danger',
+ }
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
