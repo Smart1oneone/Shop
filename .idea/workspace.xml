@@ -4,300 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aa6318d7-edd8-4e6c-a12b-bafe1c7bafa5" name="Changes" comment="a lot of small things">
-      <change afterPath="$PROJECT_DIR$/backend/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/Shop/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/Shop/asgi.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/Shop/celery.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/Shop/settings.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/Shop/static/ManShop/css/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/Shop/static/ManShop/js/box-change.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/Shop/templates/ManShop/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/Shop/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/Shop/views.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/Shop/wsgi.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/account/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/account/admin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/account/apps.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/account/forms.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/account/migrations/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/account/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/account/templates/account/dashboard/account-delete.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/account/templates/account/dashboard/dashboard.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/account/templates/account/dashboard/profile-management.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/account/templates/account/email/email-verification.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/account/templates/account/email/email_success_template.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/account/templates/account/email/mail_body.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/account/templates/account/email/mail_body.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/account/templates/account/login/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/account/templates/account/password/password_reset.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/account/templates/account/password/password_reset_complete.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/account/templates/account/password/password_reset_confirm.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/account/templates/account/password/password_reset_done.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/account/templates/account/password/password_reset_email.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/account/templates/account/registration/register.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/account/tests.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/account/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/account/views.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/api/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/api/admin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/api/apps.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/api/migrations/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/api/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/api/pagination.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/api/permissions.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/api/serializers.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/api/tests.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/api/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/api/views.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/cart/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/cart/admin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/cart/apps.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/cart/cart.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/cart/context_processors.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/cart/migrations/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/cart/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/cart/templates/cart/cart-view.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/cart/tests.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/cart/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/cart/views.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/payment/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/payment/admin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/payment/apps.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/payment/forms.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/payment/migrations/0001_initial.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/payment/migrations/0002_alter_orderitem_options_orderitem_quantity_gte_0.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/payment/migrations/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/payment/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/payment/signals.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/payment/static/payment/css/payment-success-fail.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/payment/static/payment/css/pdf.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/payment/tasks.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/payment/templates/payment/checkout.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/payment/templates/payment/order/pdf/pdf_invoice.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/payment/templates/payment/payment-failed.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/payment/templates/payment/payment-success.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/payment/templates/payment/shipping.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/payment/tests.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/payment/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/payment/views.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/payment/webhooks.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/recommend/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/recommend/admin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/recommend/apps.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/recommend/migrations/0001_initial.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/recommend/migrations/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/recommend/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/recommend/templates/recommend/recommendation.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/recommend/tests.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/recommend/views.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/requirements.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/shop/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/shop/admin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/shop/apps.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/shop/context_processors.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/shop/management/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/shop/management/commands/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/shop/management/commands/fakeproducts.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/shop/migrations/0001_initial.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/shop/migrations/0002_product_price.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/shop/migrations/0003_alter_category_parent.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/shop/migrations/0004_alter_product_options_alter_category_unique_together_and_more.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/shop/migrations/0005_alter_product_image.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/shop/migrations/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/shop/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/shop/static/fonts/montserrat.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/shop/static/fonts/montserrat/v26/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCtr6Hw0aXp-p7K4KLjztg.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/shop/static/fonts/montserrat/v26/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCtr6Hw2aXp-p7K4KLjztg.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/shop/static/fonts/montserrat/v26/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCtr6Hw3aXp-p7K4KLjztg.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/shop/static/fonts/montserrat/v26/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCtr6Hw5aXp-p7K4KLg.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/shop/static/fonts/montserrat/v26/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCtr6Hw9aXp-p7K4KLjztg.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/shop/static/fonts/roboto.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/shop/static/fonts/roboto/v30/KFOmCnqEu92Fr1Mu4WxKKTU1Kvnz.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/shop/static/fonts/roboto/v30/KFOmCnqEu92Fr1Mu4mxKKTU1Kg.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/shop/static/fonts/roboto/v30/KFOmCnqEu92Fr1Mu5mxKKTU1Kvnz.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/shop/static/fonts/roboto/v30/KFOmCnqEu92Fr1Mu72xKKTU1Kvnz.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/shop/static/fonts/roboto/v30/KFOmCnqEu92Fr1Mu7GxKKTU1Kvnz.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/shop/static/fonts/roboto/v30/KFOmCnqEu92Fr1Mu7WxKKTU1Kvnz.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/shop/static/fonts/roboto/v30/KFOmCnqEu92Fr1Mu7mxKKTU1Kvnz.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/shop/static/shop/css/base.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/shop/static/shop/images/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/shop/static/shop/js/base.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/shop/templates/base.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/shop/templates/shop/_partials/_footer.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/shop/templates/shop/_partials/_head_imports.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/shop/templates/shop/_partials/_messages.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/shop/templates/shop/_partials/_navbar.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/shop/templates/shop/category_list.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/shop/templates/shop/components/product_list.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/shop/templates/shop/product_detail.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/shop/templates/shop/products.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/shop/tests.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/shop/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/shop/views.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/static/fonts/montserrat.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/static/fonts/montserrat/v26/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCtr6Hw0aXp-p7K4KLjztg.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/static/fonts/montserrat/v26/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCtr6Hw2aXp-p7K4KLjztg.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/static/fonts/montserrat/v26/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCtr6Hw3aXp-p7K4KLjztg.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/static/fonts/montserrat/v26/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCtr6Hw5aXp-p7K4KLg.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/static/fonts/montserrat/v26/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCtr6Hw9aXp-p7K4KLjztg.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/static/fonts/roboto.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/static/fonts/roboto/v30/KFOmCnqEu92Fr1Mu4WxKKTU1Kvnz.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/static/fonts/roboto/v30/KFOmCnqEu92Fr1Mu4mxKKTU1Kg.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/static/fonts/roboto/v30/KFOmCnqEu92Fr1Mu5mxKKTU1Kvnz.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/static/fonts/roboto/v30/KFOmCnqEu92Fr1Mu72xKKTU1Kvnz.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/static/fonts/roboto/v30/KFOmCnqEu92Fr1Mu7GxKKTU1Kvnz.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/static/fonts/roboto/v30/KFOmCnqEu92Fr1Mu7WxKKTU1Kvnz.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/static/fonts/roboto/v30/KFOmCnqEu92Fr1Mu7mxKKTU1Kvnz.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dockerignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nginx/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nginx/nginx.conf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="aa6318d7-edd8-4e6c-a12b-bafe1c7bafa5" name="Changes" comment="docker file, nginx configuration, setup build">
+      <change afterPath="$PROJECT_DIR$/.github/workflows/main.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shop/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shop/asgi.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shop/celery.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shop/settings.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shop/static/ManShop/css/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shop/static/ManShop/js/box-change.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shop/templates/ManShop/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shop/urls.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shop/views.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shop/wsgi.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/account/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/account/admin.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/account/apps.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/account/forms.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/account/migrations/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/account/models.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/account/templates/account/dashboard/account-delete.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/account/templates/account/dashboard/dashboard.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/account/templates/account/dashboard/profile-management.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/account/templates/account/email/email-verification.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/account/templates/account/email/email_success_template.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/account/templates/account/email/mail_body.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/account/templates/account/email/mail_body.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/account/templates/account/login/login.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/account/templates/account/password/password_reset.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/account/templates/account/password/password_reset_complete.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/account/templates/account/password/password_reset_confirm.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/account/templates/account/password/password_reset_done.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/account/templates/account/password/password_reset_email.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/account/templates/account/registration/register.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/account/tests.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/account/urls.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/account/views.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cart/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cart/admin.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cart/apps.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cart/cart.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cart/context_processors.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cart/migrations/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cart/models.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cart/templates/cart/cart-view.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cart/tests.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cart/urls.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cart/views.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/manage.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/manage.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/products/products/2024/06/23/jacket1.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/products/products/2024/06/23/jacket2.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/products/products/2024/06/23/jacket2_14RnT6c.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/products/products/2024/06/23/jacket3.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/products/products/2024/06/23/test_image.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/products/products/2024/06/23/test_image_9oBtZ2z.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/products/products/2024/06/23/test_image_HvOYTUf.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/products/products/2024/06/23/test_image_PspAvu7.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/products/products/2024/06/23/test_image_XLiPLd7.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/products/products/2024/06/23/test_image_bypdP75.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/payment/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/payment/admin.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/payment/apps.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/payment/forms.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/payment/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/payment/migrations/0002_alter_orderitem_options_orderitem_quantity_gte_0.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/payment/migrations/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/payment/models.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/payment/signals.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/payment/static/payment/css/payment-success-fail.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/payment/static/payment/css/pdf.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/payment/tasks.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/payment/templates/payment/checkout.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/payment/templates/payment/order/pdf/pdf_invoice.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/payment/templates/payment/payment-failed.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/payment/templates/payment/payment-success.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/payment/templates/payment/shipping.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/payment/tests.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/payment/urls.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/payment/views.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/payment/webhooks.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/recommend/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/recommend/admin.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/recommend/apps.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/recommend/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/recommend/migrations/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/recommend/models.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/recommend/templates/recommend/recommendation.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/recommend/tests.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/recommend/views.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/admin.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/apps.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/context_processors.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/management/commands/fakeproducts.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/migrations/0002_product_price.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/migrations/0003_alter_category_parent.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/migrations/0004_alter_product_options_alter_category_unique_together_and_more.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/migrations/0005_alter_product_image.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/migrations/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/models.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/static/fonts/montserrat.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/static/fonts/montserrat/v26/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCtr6Hw0aXp-p7K4KLjztg.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/static/fonts/montserrat/v26/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCtr6Hw2aXp-p7K4KLjztg.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/static/fonts/montserrat/v26/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCtr6Hw3aXp-p7K4KLjztg.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/static/fonts/montserrat/v26/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCtr6Hw5aXp-p7K4KLg.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/static/fonts/montserrat/v26/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCtr6Hw9aXp-p7K4KLjztg.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/static/fonts/roboto.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/static/fonts/roboto/v30/KFOmCnqEu92Fr1Mu4WxKKTU1Kvnz.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/static/fonts/roboto/v30/KFOmCnqEu92Fr1Mu4mxKKTU1Kg.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/static/fonts/roboto/v30/KFOmCnqEu92Fr1Mu5mxKKTU1Kvnz.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/static/fonts/roboto/v30/KFOmCnqEu92Fr1Mu72xKKTU1Kvnz.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/static/fonts/roboto/v30/KFOmCnqEu92Fr1Mu7GxKKTU1Kvnz.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/static/fonts/roboto/v30/KFOmCnqEu92Fr1Mu7WxKKTU1Kvnz.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/static/fonts/roboto/v30/KFOmCnqEu92Fr1Mu7mxKKTU1Kvnz.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/static/shop/css/base.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/static/shop/images/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/static/shop/js/base.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/templates/base.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/templates/shop/_partials/_footer.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/templates/shop/_partials/_head_imports.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/templates/shop/_partials/_messages.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/templates/shop/_partials/_navbar.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/templates/shop/category_list.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/templates/shop/components/product_list.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/templates/shop/product_detail.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/templates/shop/products.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/tests.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/urls.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/views.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/fonts/montserrat.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/fonts/montserrat/v26/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCtr6Hw0aXp-p7K4KLjztg.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/fonts/montserrat/v26/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCtr6Hw2aXp-p7K4KLjztg.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/fonts/montserrat/v26/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCtr6Hw3aXp-p7K4KLjztg.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/fonts/montserrat/v26/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCtr6Hw5aXp-p7K4KLg.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/fonts/montserrat/v26/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCtr6Hw9aXp-p7K4KLjztg.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/fonts/roboto.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/fonts/roboto/v30/KFOmCnqEu92Fr1Mu4WxKKTU1Kvnz.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/fonts/roboto/v30/KFOmCnqEu92Fr1Mu4mxKKTU1Kg.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/fonts/roboto/v30/KFOmCnqEu92Fr1Mu5mxKKTU1Kvnz.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/fonts/roboto/v30/KFOmCnqEu92Fr1Mu72xKKTU1Kvnz.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/fonts/roboto/v30/KFOmCnqEu92Fr1Mu7GxKKTU1Kvnz.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/fonts/roboto/v30/KFOmCnqEu92Fr1Mu7WxKKTU1Kvnz.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/fonts/roboto/v30/KFOmCnqEu92Fr1Mu7mxKKTU1Kvnz.woff2" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -561,7 +270,15 @@
       <option name="project" value="LOCAL" />
       <updated>1722785318614</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="docker file, nginx configuration, setup build">
+      <option name="closed" value="true" />
+      <created>1722944605631</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1722944605631</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -587,7 +304,8 @@
     <MESSAGE value="added fonts, stripe payment" />
     <MESSAGE value="added celery+redis for email confirmation order" />
     <MESSAGE value="a lot of small things" />
-    <option name="LAST_COMMIT_MESSAGE" value="a lot of small things" />
+    <MESSAGE value="docker file, nginx configuration, setup build" />
+    <option name="LAST_COMMIT_MESSAGE" value="docker file, nginx configuration, setup build" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Shop$scratch.coverage" NAME="scratch Coverage Results" MODIFIED="1718875828511" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$APPLICATION_CONFIG_DIR$/scratches" />
