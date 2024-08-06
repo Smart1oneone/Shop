@@ -1,17 +1,19 @@
+from datetime import timedelta
 from pathlib import Path
 
 import environ
 from django.contrib import messages
 
 BASE_DIR = Path(__file__).resolve().parent.parent
+ENV_DIR = Path(__file__).resolve().parent.parent.parent
 
 env = environ.Env()
-env.read_env(BASE_DIR / '.env')
+env.read_env(ENV_DIR / '.env')
 
 SECRET_KEY = 'django-insecure-301&5gsa2!ot2nqnm8e$x-v30@#7u0pszl+w2b@@cc&o+$lmd8'
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -38,6 +40,11 @@ INSTALLED_APPS = [
     'django_celery_results',
     'django_htmx',
     'recommend.apps.RecommendConfig',
+    'rest_framework',
+    'djoser',
+    'drf_yasg',
+    'api.apps.ApiConfig',
+
 
 
 ]
@@ -184,4 +191,28 @@ CELERY_RESULT_EXTENDED = True
 CELERY_BROKER_CONNECTION_RETRY_ON_STARTUP = True
 CELERY_BEAT_SCHEDULER = 'django_celery_beat.schedulers.DatabaseScheduler'
 
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': (
+        'rest_framework_simplejwt.authentication.JWTAuthentication',
+    ),
+    "DEFAULT_PERMISSION_CLASSES": [
+        "api.permissions.IsAdminOrReadOnly",
+    ],
+    "DEFAULT_PAGINATION_CLASS": "api.pagination.StandardResultsSetPagination",
+    "PAGE_SIZE": 15,
+}
+
+SIMPLE_JWT = {
+    'ACCESS_TOKEN_LIFETIME': timedelta(minutes=60),
+    'REFRESH_TOKEN_LIFETIME': timedelta(days=1),
+}
+
+DJOSER = {
+    "LOGIN_FIELD": "email",
+    "SERIALIZERS": {
+        "user_create": "api.serializers.CustomUserCreateSerializer",
+    },
+    'AUTH_HEADER_TYPES': ('JWT',),
+
+}
 
